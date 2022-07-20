@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Водители</title>
+</head>
+
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html">
+                <div class="logo header__logo">
+                    <img src="img/logo.svg" alt="logo" />
+                    <p>база автомобилистов грузовых авто и спец техники</p>
+                </div></a
+            >
+            <nav class="nav header__nav">
+                <ul class="nav__lists">
+                    <li class="nav__list">
+                        <a href="blog.html" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="about.html" class="nav__link">О сервисе</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="support.html" class="nav__link"
+                            >Тех.поддержка</a
+                        >
+                    </li>
+                    <li class="nav__list nav__driver">
+                        <a href="drivers.html" class="nav__link">Водители</a>
+                    </li>
+                    <li class="nav__list nav__subscribe">
+                        <a href="subscribe.html" class="nav__link">Подписка</a>
+                    </li>
+                </ul>
+                <div class="header__inner">
+                    <a href="registration.html" class="header__registry"
+                        >Регистрация</a
+                    >
+                    <button class="header__btn btn">Вход</button>
+                </div>
+                <div class="nav__support">
+                    <div class="nav__support-item">
+                        <div>
+                            <h6 class="nav__support-title">Служба поддержки</h6>
+                            <p class="nav__support-text">
+                                Вы можете обратиться в нашу службу поддержки с
+                                любыми вопросами по работе сервиса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav__support-item">
+                        <div class="nav__support-inner">
+                            <p>Электронная почта</p>
+                            <a href="mailto:info@blacktruck.ru" target="_blank"
+                                >info@blacktruck.ru</a
+                            >
+                        </div>
+                        <div class="nav__support-inner">
+                            <p>Телеграмм</p>
+                            <a href="https://t.me/blacktruck" target="_blank"
+                                >@blacktruck</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="header__btn btn mobile">Вход</button>
+            <div class="burger">
+                <div class="burger__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <section class="drivers">
+    <div class="container">
+        <div class="crumbs">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+   
+                <li>
+                    <p>Водители</p>
+                </li>
+            </ul>
+        </div>
+        <div class="drivers__wrapper">
+            <div class="drivers__inner">
+                <h2 class="drivers__title title">Список водителей</h2>
+                <div class="drivers__recordings"><span>124</span>записи</div>
+                <div class="drivers__wrap">
+                    <a href="add-driver.html" class="add__btn btn btn-orange">
+                        + Добавить водителя
+                    </a>
+                    <div class="drivers__search-mobile">
+                        <input type="text" />
+                        <button class="drivers__search-btn btn">Поиск</button>
+                    </div>
+                </div>
+            </div>
+            <div class="drivers__controls">
+                <div class="drivers__selects">
+                    <div class="select add-select1" data-state="">
+                        <div class="select__title" data-default="Option 0">
+                            Недавно добавленные
+                        </div>
+                        <div class="select__content">
+                            <input
+                                id="singleSelect0"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                                checked
+                                disabled
+                            />
+                            <label for="singleSelect0" class="select__label"
+                                >Недавно добавленные</label
+                            >
+                            <input
+                                id="singleSelect1"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                            />
+                            <label for="singleSelect1" class="select__label"
+                                >В розыске</label
+                            >
+                            <input
+                                id="singleSelect2"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect"
+                            />
+                            <label for="singleSelect2" class="select__label"
+                                >Самые обсуждаемые</label
+                            >
+                        </div>
+                    </div>
+                    <div class="select add-select2" data-state="">
+                        <div
+                            class="select__title select__title2"
+                            data-default="Option 1"
+                        >
+                            Все регионы
+                        </div>
+                        <div class="select__content">
+                            <input
+                                id="region"
+                                class="select__input"
+                                type="radio"
+                                name="singleSelect2"
+                                checked=""
+                                disabled=""
+                            />
+                            <label for="region" class="select__label"
+                                >Все регионы</label
+                            >
+                            <div class="lab">
+                                <input
+                                    id="region0"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region0" class="select__label"
+                                    >Республика Адыгея</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region1"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region1" class="select__label"
+                                    >Республика Башкортостан</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region2"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region2" class="select__label"
+                                    >Республика Бурятия</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region3"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region3" class="select__label"
+                                    >Республика Алтай</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region4"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region4" class="select__label"
+                                    >Республика Дагестан</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region5"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region5" class="select__label"
+                                    >Республика Ингушетия</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region6"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region6" class="select__label"
+                                    >Республика Кабардино-Балкарская</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region7"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region7" class="select__label"
+                                    >Республика Калмыкия</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region8"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region8" class="select__label"
+                                    >Республика Карачаево-Черкесская</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region9"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region9" class="select__label"
+                                    >Республика Карелия</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region10"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region10" class="select__label"
+                                    >Республика Коми</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region11"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region11" class="select__label"
+                                    >Республика Марий Эл</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region12"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region12" class="select__label"
+                                    >Республика Мордовия</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region13"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region13" class="select__label"
+                                    >Республика Саха /Якутия/</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region14"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region14" class="select__label"
+                                    >Республика Северная Осетия - Алания</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region15"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region15" class="select__label"
+                                    >Республика Татарстан</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region16"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region16" class="select__label"
+                                    >Республика Тыва</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region17"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region17" class="select__label"
+                                    >Республика Удмуртская</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region18"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region18" class="select__label"
+                                    >Республика Хакасия</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region19"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region19" class="select__label"
+                                    >Республика Чеченская</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region20"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region20" class="select__label"
+                                    >Республика Чувашская Республика</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region21"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region21" class="select__label"
+                                    >Алтайский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region22"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region22" class="select__label"
+                                    >Краснодарский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region23"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region23" class="select__label"
+                                    >Красноярский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region24"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region24" class="select__label"
+                                    >Приморский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region25"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region25" class="select__label"
+                                    >Ставропольский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region26"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region26" class="select__label"
+                                    >Хабаровский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region27"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region27" class="select__label"
+                                    >Амурская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region28"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region28" class="select__label"
+                                    >Архангельская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region29"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region29" class="select__label"
+                                    >Астраханская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region30"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region30" class="select__label"
+                                    >Белгородская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region31"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region31" class="select__label"
+                                    >Брянская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region32"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region32" class="select__label"
+                                    >Владимирская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region33"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region33" class="select__label"
+                                    >Волгоградская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region34"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region34" class="select__label"
+                                    >Вологодская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region35"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region35" class="select__label"
+                                    >Воронежская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region36"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region36" class="select__label"
+                                    >Ивановская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region37"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region37" class="select__label"
+                                    >Иркутская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region38"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region38" class="select__label"
+                                    >Калининградская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region39"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region39" class="select__label"
+                                    >Калужская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region40"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region40" class="select__label"
+                                    >Камчатский область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region41"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region41" class="select__label"
+                                    >Кемеровская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region42"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region42" class="select__label"
+                                    >Кировская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region43"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region43" class="select__label"
+                                    >Костромская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region44"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region44" class="select__label"
+                                    >Курганская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region45"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region45" class="select__label"
+                                    >Курская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region46"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region46" class="select__label"
+                                    >Ленинградская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region47"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region47" class="select__label"
+                                    >Липецкая область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region48"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region48" class="select__label"
+                                    >Магаданская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region49"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region49" class="select__label"
+                                    >Московская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region50"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region50" class="select__label"
+                                    >Мурманская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region51"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region51" class="select__label"
+                                    >Нижегородская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region52"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region52" class="select__label"
+                                    >Новгородская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region53"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region53" class="select__label"
+                                    >Новосибирская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region54"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region54" class="select__label"
+                                    >Омская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region55"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region55" class="select__label"
+                                    >Оренбургская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region56"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region56" class="select__label"
+                                    >Орловская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region57"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region57" class="select__label"
+                                    >Пензенская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region58"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region58" class="select__label"
+                                    >Пермский область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region59"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region59" class="select__label"
+                                    >Псковская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region60"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region60" class="select__label"
+                                    >Ростовская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region61"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region61" class="select__label"
+                                    >Рязанская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region62"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region62" class="select__label"
+                                    >Самарская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region63"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region63" class="select__label"
+                                    >Саратовская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region64"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region64" class="select__label"
+                                    >Сахалинская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region65"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region65" class="select__label"
+                                    >область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region66"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region66" class="select__label"
+                                    >Свердловская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region67"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region67" class="select__label"
+                                    >Смоленская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region68"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region68" class="select__label"
+                                    >Тамбовская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region69"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region69" class="select__label"
+                                    >Тверская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region70"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region70" class="select__label"
+                                    >Томская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region71"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region71" class="select__label"
+                                    >Тульская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region72"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region72" class="select__label"
+                                    >Тюменская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region73"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region73" class="select__label"
+                                    >Ульяновская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region74"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region74" class="select__label"
+                                    >Челябинская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region75"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region75" class="select__label"
+                                    >Забайкальский край</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region76"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region76" class="select__label"
+                                    >Ярославская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region77"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region77" class="select__label"
+                                    >Москва</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region78"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region78" class="select__label"
+                                    >Санкт-Петербург</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region79"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region79" class="select__label"
+                                    >Еврейская область</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region80"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region80" class="select__label"
+                                    >Ханты-Мансийский АО</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region81"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region81" class="select__label"
+                                    >Чукотский АО</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region82"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region82" class="select__label"
+                                    >Ямало-Ненецкий АО</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region83"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region83" class="select__label"
+                                    >г Севастополь</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region84"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region84" class="select__label"
+                                    >г Байконур</label
+                                >
+                            </div>
+                            <div class="lab">
+                                <input
+                                    id="region85"
+                                    class="select__input"
+                                    type="radio"
+                                    name="singleSelect2"
+                                />
+                                <label for="region85" class="select__label"
+                                    >Республика Крым</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drivers__search">
+                    <input
+                        type="text"
+                        placeholder="Поиск по ФИО, телефону, паспорту, правам"
+                    />
+
+                    <button class="drivers__btn">Найти</button>
+                </div>
+            </div>
+            <div class="list__items">
+                <a href="#"  class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-1.webp" type="image/webp"><img src="img/list-1.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <div
+                                            >8 (909) 999-00-00</div
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="attention list__attention">в розыске</div>
+                        <div class="new list__new">новый</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </a>  
+                <a href="#"  class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-2.webp" type="image/webp"><img src="img/list-2.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <div
+                                            >8 (909) 999-00-00</div
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="new list__new">новый</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </a>  
+                <a href="#"  class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-3.webp" type="image/webp"><img src="img/list-3.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <div
+                                            >8 (909) 999-00-00</div
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="new list__new">новый</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </a>
+                <a href="#"  class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-4.webp" type="image/webp"><img src="img/list-4.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <div
+                                            >8 (909) 999-00-00</div
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left"></div>
+                    <div class="list__comment">0</div>
+                </a>
+                <a href="#"  class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-5.webp" type="image/webp"><img src="img/list-5.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <div
+                                            >8 (909) 999-00-00</div
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="attention list__attention">в розыске</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </a>
+                <a href="#"  class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-6.webp" type="image/webp"><img src="img/list-6.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <div
+                                            >8 (909) 999-00-00</div
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left"></div>
+                    <div class="list__comment">0</div>
+                </a>
+            </div>
+            <button class="list__btn btn" data-path="form-popup">
+                Показать еще
+            </button>
+            <div class="blog__pagination pagination">
+                <div class="pagination__prev"></div>
+                <div class="pagination__pagination-numbers">
+                    <div class="pagination__pagination-number active">1</div>
+                    <div class="pagination__pagination-number">2</div>
+                    <div class="pagination__pagination-number">3</div>
+                    <span>...</span>
+                    <div class="pagination__pagination-number">4</div>
+                    <div class="pagination__pagination-number">5</div>
+                    <div class="pagination__pagination-number">6</div>
+                    <div class="pagination__pagination-number">7</div>
+                    <div class="pagination__pagination-number">8</div>
+                </div>
+
+                <div class="pagination__next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="write">
+    <div class="container">
+        <div class="write__wrapper">
+            <h2 class="write__title title">Напишите нам</h2>
+            <p class="write__text text">
+                Если у вас возникли вопросы или не получается
+                зарегистрироваться, авторизоваться, добавить водителя.
+            </p>
+            <div class="write__links">
+                <a href="mailto:info@blacktruck.ru" class="write__link">
+                    <span>Электронная почта</span>info@blacktruck.ru
+                </a>
+                <a
+                    href="https://t.me/blacktruck"
+                    target="_blank"
+                    class="write__link"
+                >
+                    <span>Телеграмм</span>@blacktruck
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="index.html">
+                    <div class="logo footer__logo">
+                        <img src="img/logo-white.svg" alt="logo" />
+                        <p>база автомобилистов грузовых авто и спец техники</p>
+                    </div></a
+                >
+                <p class="footer__info-logo">
+                    © 2022 INFOVODITEL, Чёрный список водителей
+                </p>
+            </div>
+            <div class="footer__right">
+                <nav class="nav footer__nav">
+                    <ul class="nav__lists">
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">О сервисе</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Тех.поддержка</a>
+                        </li>
+                        <li class="nav__list nav__driver">
+                            <a href="#" class="nav__link">Водители</a>
+                        </li>
+                        <li class="nav__list nav__subscribe">
+                            <a href="#" class="nav__link">Подписка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <a href="#"
+                        ><img src="img/logo-Vela.svg" alt="logo" /> Разработка
+                        и продвижение</a
+                    >
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/app.min.js"></script>
+
+    </body>
+</html>

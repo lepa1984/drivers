@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <title>Предварительный просмотр</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <a href="index.html">
+                            <div class="logo header__logo">
+                                <img src="img/logo.svg" alt="logo" />
+                                <p>
+                                    база автомобилистов грузовых авто и спец
+                                    техники
+                                </p>
+                            </div></a
+                        >
+                        <nav class="nav header__nav">
+                            <ul class="nav__lists">
+                                <li class="nav__list">
+                                    <a href="blog.html" class="nav__link"
+                                        >Блог</a
+                                    >
+                                </li>
+                                <li class="nav__list">
+                                    <a href="about.html" class="nav__link"
+                                        >О сервисе</a
+                                    >
+                                </li>
+                                <li class="nav__list">
+                                    <a href="support.html" class="nav__link"
+                                        >Тех.поддержка</a
+                                    >
+                                </li>
+                                <li class="nav__list nav__driver">
+                                    <a href="drivers.html" class="nav__link"
+                                        >Водители</a
+                                    >
+                                </li>
+                                <li class="nav__list nav__subscribe">
+                                    <a href="subscribe.html" class="nav__link"
+                                        >Подписка</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="header__inner">
+                                <a
+                                    href="registration.html"
+                                    class="header__registry"
+                                    >Регистрация</a
+                                >
+                                <button class="header__btn btn">Вход</button>
+                            </div>
+                            <div class="nav__support">
+                                <div class="nav__support-item">
+                                    <div>
+                                        <h6 class="nav__support-title">
+                                            Служба поддержки
+                                        </h6>
+                                        <p class="nav__support-text">
+                                            Вы можете обратиться в нашу службу
+                                            поддержки с любыми вопросами по
+                                            работе сервиса
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nav__support-item">
+                                    <div class="nav__support-inner">
+                                        <p>Электронная почта</p>
+                                        <a
+                                            href="mailto:info@blacktruck.ru"
+                                            target="_blank"
+                                            >info@blacktruck.ru</a
+                                        >
+                                    </div>
+                                    <div class="nav__support-inner">
+                                        <p>Телеграмм</p>
+                                        <a
+                                            href="https://t.me/blacktruck"
+                                            target="_blank"
+                                            >@blacktruck</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <button class="header__btn btn mobile">Вход</button>
+                        <div class="burger">
+                            <div class="burger__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="content">
+                <section class="check">
+                    <div class="container">
+                        <div class="crumbs">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="add-driver.html"
+                                        >Добавить водителя в базу</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <p>Предварительный просмотр</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="check__wrapper">
+                            <a href="add-driver.html" class="check__back"
+                                >Вернуться к редактированию</a
+                            >
+                            <div class="check__text">
+                                <div class="check__text-inner">
+                                    <p>
+                                        После добавления водителя в базу вы не
+                                        сможете самостоятельно отредактировать
+                                        или удалить водителя.
+                                    </p>
+                                    <p>
+                                        Для этого вам будет необходимо
+                                        обратиться в службу поддержки, поэтому
+                                        мы рекомендуем перепроверить ваши
+                                        данные.
+                                    </p>
+                                </div>
+                                <a
+                                    href="add-driver .html"
+                                    class="check__btn btn btn-orange"
+                                    >Добавить водителя</a
+                                >
+                            </div>
+                            <h2 class="check__title title">
+                                Власенко Артем Максимович
+                            </h2>
+
+                            <div class="driver__inner">
+                                <div class="driver__card">
+                                    <div class="driver__avatar">
+                                        <picture
+                                            ><source
+                                                srcset="img/list-1.webp"
+                                                type="image/webp" />
+                                            <img
+                                                src="img/list-1.jpg"
+                                                alt="avatar"
+                                        /></picture>
+                                        <div class="driver__avatar-inner">
+                                            <div class="list__add">
+                                                Добавлен: 10.03.2022
+                                            </div>
+                                            <div
+                                                class="driver__ip"
+                                                data-target="form-popup"
+                                            >
+                                                ИП Фролов
+                                            </div>
+                                        </div>
+                                        <div class="list__left">
+                                            <div
+                                                class="attention list__attention"
+                                            >
+                                                в розыске
+                                            </div>
+                                            <div class="new list__new">
+                                                новый
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="driver__row">
+                                        <div class="driver__item">
+                                            <p class="driver__item-title">
+                                                Дата рождения:
+                                            </p>
+                                            <p class="driver__item-text">
+                                                23.09.1984
+                                            </p>
+                                        </div>
+                                        <div class="driver__item">
+                                            <p class="driver__item-title">
+                                                Телефоны:
+                                            </p>
+                                            <p class="driver__item-text">
+                                                8 (909) 999-00-00,
+                                            </p>
+                                            <p class="driver__item-text">
+                                                8 (923) 999-00-00
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="driver__row">
+                                        <div class="driver__item">
+                                            <p class="driver__item-title">
+                                                Паспорт:
+                                            </p>
+                                            <p class="driver__item-text">
+                                                Серия: 9090
+                                            </p>
+                                            <p class="driver__item-text">
+                                                Номер: 203456
+                                            </p>
+                                        </div>
+                                        <div class="driver__item">
+                                            <p class="driver__item-title">
+                                                Водительское удостоверение:
+                                            </p>
+                                            <p class="driver__item-text">
+                                                Серия: 9090
+                                            </p>
+                                            <p class="driver__item-text">
+                                                Номер: 203456
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="driver__row">
+                                        <div class="driver__item">
+                                            <p class="driver__item-title">
+                                                Прописка:
+                                            </p>
+                                            <p class="driver__item-text">
+                                                Республика Киргизия. Временная
+                                                регистрация: Краснодарский край,
+                                                г. Краснодар, ул. Борисова 23,
+                                                д. 8, кв. 92
+                                            </p>
+                                        </div>
+                                        <div class="driver__item">
+                                            <p class="driver__item-title">
+                                                Город:
+                                            </p>
+                                            <p class="driver__item-text">
+                                                Краснодар
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="driver__card-photo">
+                                        <h6 class="driver__photo-title">
+                                            Фотографии водителя:
+                                        </h6>
+                                        <div class="driver__card-img">
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-1-big.jpg "
+                                                ><picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-1.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-1.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-2-big.jpg "
+                                            >
+                                                <picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-2.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-2.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-3-big.jpg "
+                                            >
+                                                <picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-3.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-3.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-4-big.jpg "
+                                            >
+                                                <picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-4.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-4.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-1-big.jpg "
+                                                ><picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-1.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-1.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-2-big.jpg "
+                                            >
+                                                <picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-2.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-2.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-3-big.jpg "
+                                            >
+                                                <picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-3.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-3.jpg"
+                                                /></picture>
+                                            </a>
+                                            <a
+                                                data-fancybox="gallery"
+                                                href="img/driver-4-big.jpg "
+                                            >
+                                                <picture
+                                                    ><source
+                                                        srcset="
+                                                            img/driver-4.webp
+                                                        "
+                                                        type="image/webp" />
+                                                    <img src="img/driver-4.jpg"
+                                                /></picture>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="driver__card-all"
+                                            >Все фотографии</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="driver__texts">
+                                    <h4 class="driver__texts-title">
+                                        Причины добавления в базу:
+                                    </h4>
+                                    <p class="driver__texts-text">
+                                        Взял в парке автомобиль на ВЫКАТ за 8 -
+                                        ь месяцев успел накопить критичный долг
+                                        в 128000 рублей, из чего он состоит, не
+                                        своевременные оплаты согласно договора
+                                        ВЫКАТА, различные механические
+                                        повреждения кузова всего автомобиля, в
+                                        моторном отсеке автомобиля можно
+                                        посадить картошку, на столько там грязно
+                                        , плюс проблемы с двигателем, которые
+                                        придется сейчас устанавливать.
+                                        Автомобиль за время ВЫКАТА не
+                                        ремонтировался от слова совсем. Таких
+                                        водителей нельзя не то что подпускать к
+                                        техники, но и к любой работе. Относится
+                                        к вещам отвратительно, ищет в любой
+                                        мелочи свою меркантильную выгоду. По
+                                        городу находится во всех ЧЁРНЫХ СПИСКАХ,
+                                        занимался подменой запчастей с целью
+                                        реализации. Устраивался в парк, брал
+                                        автомобиль в аренду, загонял к знакомым
+                                        в гаражное СТО, снимались с автомобиля
+                                        хорошие запчасти, устанавливались вместо
+                                        них с большой выработкой , а снятые
+                                        запчасти реализовывались , разницу между
+                                        ценой запчасти с выработкой и снятой с
+                                        автомобиля хорошей делилась между тем
+                                        кто снимал и им.
+                                    </p>
+                                    <p class="driver__texts-text">
+                                        Если вдруг к вам заявится данный
+                                        персонаж, будьте бдительны, иначе вы
+                                        рискуете попасть в ситуацию из которой
+                                        сами будете выкручиваться, только
+                                        разница в следующем, этот персонаж
+                                        сбежит и сменит контактные номера, а вы
+                                        начнете тратить собственные средства на
+                                        восстановление вашего автомобиля.
+                                    </p>
+                                    <p class="driver__texts-text">
+                                        В общем и целом, это конченный и
+                                        неисправимый МУДАК, будьте аккуратны с
+                                        такими аферистами.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="driver__video">
+                                <iframe
+                                    src="https://rutube.ru/play/embed/a3e280598dcbb36aa0d7090efc785dd2"
+                                    frameborder="0"
+                                    allow="clipboard-write; "
+                                    webkitAllowFullScreen
+                                    mozallowfullscreen
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div class="driver__photo">
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-1-big.jpg "
+                                    ><picture
+                                        ><source
+                                            srcset="img/photo-1.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-1.jpg"
+                                    /></picture>
+                                </a>
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-2-big.jpg "
+                                    ><picture
+                                        ><source
+                                            srcset="img/photo-2.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-2.jpg"
+                                    /></picture>
+                                </a>
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-3-big.jpg "
+                                    ><picture
+                                        ><source
+                                            srcset="img/photo-3.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-3.jpg"
+                                    /></picture>
+                                </a>
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-4-big.jpg "
+                                    ><picture
+                                        ><source
+                                            srcset="img/photo-4.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-4.jpg"
+                                    /></picture>
+                                </a>
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-5-big.jpg "
+                                    ><picture
+                                        ><source
+                                            srcset="img/photo-5.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-5.jpg"
+                                    /></picture>
+                                </a>
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-6-big.jpg "
+                                    ><picture
+                                        ><source
+                                            srcset="img/photo-6.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-6.jpg"
+                                    /></picture>
+                                </a>
+                                <a
+                                    data-fancybox="gallery2"
+                                    href="img/photo-7-big.jpg "
+                                >
+                                    <picture
+                                        ><source
+                                            srcset="img/photo-7.webp"
+                                            type="image/webp" />
+                                        <img src="img/photo-7.jpg"
+                                    /></picture>
+                                </a>
+                            </div>
+                            <div class="check__btns">
+                                <a
+                                    href="add-driver .html"
+                                    class="btn-change btn"
+                                    >Изменить</a
+                                >
+                                <button
+                                    class="btn btn-add btn-orange"
+                                    data-target="form-popup-add-driver"
+                                >
+                                    Добавить водителя
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modals modals-add-driver">
+                        <div class="modal-overlay">
+                            <div
+                                class="modal"
+                                data-target="form-popup-add-driver"
+                            >
+                                <div class="close"></div>
+                                <h3 class="modal__title">Водитель добавлен</h3>
+                                <img src="img/check.svg" alt="icon" />
+
+                                <p class="modal__text">
+                                    Все данные уже опубликованы на сервисе,
+                                    однако модератор также проверит
+                                    всю информацию и при возникновении вопросов
+                                    свяжется с вами. Спасибо, что помогаете
+                                    другим организациям!
+                                </p>
+
+                                <button class="modal__btn btn close-btn">
+                                    Закрыть
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div class="footer__left">
+                            <a href="index.html">
+                                <div class="logo footer__logo">
+                                    <img src="img/logo-white.svg" alt="logo" />
+                                    <p>
+                                        база автомобилистов грузовых авто и спец
+                                        техники
+                                    </p>
+                                </div></a
+                            >
+                            <p class="footer__info-logo">
+                                © 2022 INFOVODITEL, Чёрный список водителей
+                            </p>
+                        </div>
+                        <div class="footer__right">
+                            <nav class="nav footer__nav">
+                                <ul class="nav__lists">
+                                    <li class="nav__list">
+                                        <a href="#" class="nav__link">Блог</a>
+                                    </li>
+                                    <li class="nav__list">
+                                        <a href="#" class="nav__link"
+                                            >О сервисе</a
+                                        >
+                                    </li>
+                                    <li class="nav__list">
+                                        <a href="#" class="nav__link"
+                                            >Тех.поддержка</a
+                                        >
+                                    </li>
+                                    <li class="nav__list nav__driver">
+                                        <a href="#" class="nav__link"
+                                            >Водители</a
+                                        >
+                                    </li>
+                                    <li class="nav__list nav__subscribe">
+                                        <a href="#" class="nav__link"
+                                            >Подписка</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="footer__info">
+                                <a href="#"
+                                    ><img src="img/logo-Vela.svg" alt="logo" />
+                                    Разработка и продвижение</a
+                                >
+                                <a href="#">Обработка персональных данных</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

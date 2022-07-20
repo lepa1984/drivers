@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Вход</title>
+</head>
+
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html">
+                <div class="logo header__logo">
+                    <img src="img/logo.svg" alt="logo" />
+                    <p>база автомобилистов грузовых авто и спец техники</p>
+                </div></a
+            >
+            <nav class="nav header__nav">
+                <ul class="nav__lists">
+                    <li class="nav__list">
+                        <a href="blog.html" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="about.html" class="nav__link">О сервисе</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="support.html" class="nav__link"
+                            >Тех.поддержка</a
+                        >
+                    </li>
+                    <li class="nav__list nav__driver">
+                        <a href="drivers.html" class="nav__link">Водители</a>
+                    </li>
+                    <li class="nav__list nav__subscribe">
+                        <a href="subscribe.html" class="nav__link">Подписка</a>
+                    </li>
+                </ul>
+                <div class="header__inner">
+                    <a href="registration.html" class="header__registry"
+                        >Регистрация</a
+                    >
+                    <button class="header__btn btn">Вход</button>
+                </div>
+                <div class="nav__support">
+                    <div class="nav__support-item">
+                        <div>
+                            <h6 class="nav__support-title">Служба поддержки</h6>
+                            <p class="nav__support-text">
+                                Вы можете обратиться в нашу службу поддержки с
+                                любыми вопросами по работе сервиса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav__support-item">
+                        <div class="nav__support-inner">
+                            <p>Электронная почта</p>
+                            <a href="mailto:info@blacktruck.ru" target="_blank"
+                                >info@blacktruck.ru</a
+                            >
+                        </div>
+                        <div class="nav__support-inner">
+                            <p>Телеграмм</p>
+                            <a href="https://t.me/blacktruck" target="_blank"
+                                >@blacktruck</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="header__btn btn mobile">Вход</button>
+            <div class="burger">
+                <div class="burger__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <section class="entrance">
+    <div class="container">
+        <div class="crumbs">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+
+                <li>
+                    <p>Вход</p>
+                </li>
+            </ul>
+        </div>
+        <div class="entrance__wrapper">
+            <h2 class="entrance__title title">Вход</h2>
+            <form class="form form-entrance">
+                <div class="form__body">
+                    <div class="form__content">
+                        <label
+                            ><p>Логин (e-mail контактного лица)</p>
+                            <input
+                                type="text"
+                                class="form__item form__input"
+                                name="password"
+                                value=""
+                                required
+                            />
+                        </label>
+                        <label
+                            ><p>Пароль</p>
+                            <input
+                                type="password"
+                                class="form__item form__input password"
+                                name="password"
+                                value=""
+                                required
+                            />
+                            <div class="form__icon"></div>
+                        </label>
+                        <button class="btn form__btn btn-orange" type="submit">
+                            Войти
+                        </button>
+                        <button
+                            class="entrance__btn"
+                            data-target="form-popup-entrance"
+                        >
+                            Забыли пароль?
+                        </button>
+                        <p>
+                            У вас еще нет аккаунта?
+                            <a href="registration.html">Зарегистрируйтесь</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modals modals-entrance">
+        <div class="modal-overlay">
+            <div class="modal" data-target="form-popup-entrance">
+                <div class="close"></div>
+
+                <h3 class="modal__title">Восстановление пароля</h3>
+
+                <label
+                    ><p>E-mail (тот, который используется для входа)</p>
+                    <input
+                        type="email"
+                        class="form__item form__input"
+                        name="mail"
+                        value=""
+                    />
+                </label>
+                <button
+                    class="modal__btn btn btn-orange modal__btn-entrance"
+                    data-target="form-popup-entrance-2"
+                >
+                    Отправить
+                </button>
+                <a href="entrance.html" class="modal__back"
+                    >Вернуться к авторизации</a
+                >
+            </div>
+        </div>
+    </div>
+    <div class="modals modals-entrance-2">
+        <div class="modal-overlay">
+            <div class="modal" data-target="form-popup-entrance-2">
+                <div class="close"></div>
+
+                <h3 class="modal__title">Восстановление пароля</h3>
+
+                <img src="img/check.svg" alt="icon" />
+                <p>
+                    Мы отправили письмо с ссылкой для сброса пароля на ваш
+                    e-mail
+                </p>
+                <button class="modal__btn btn close-btn">Хорошо</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="write">
+    <div class="container">
+        <div class="write__wrapper">
+            <h2 class="write__title title">Напишите нам</h2>
+            <p class="write__text text">
+                Если у вас возникли вопросы или не получается
+                зарегистрироваться, авторизоваться, добавить водителя.
+            </p>
+            <div class="write__links">
+                <a href="mailto:info@blacktruck.ru" class="write__link">
+                    <span>Электронная почта</span>info@blacktruck.ru
+                </a>
+                <a
+                    href="https://t.me/blacktruck"
+                    target="_blank"
+                    class="write__link"
+                >
+                    <span>Телеграмм</span>@blacktruck
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="index.html">
+                    <div class="logo footer__logo">
+                        <img src="img/logo-white.svg" alt="logo" />
+                        <p>база автомобилистов грузовых авто и спец техники</p>
+                    </div></a
+                >
+                <p class="footer__info-logo">
+                    © 2022 INFOVODITEL, Чёрный список водителей
+                </p>
+            </div>
+            <div class="footer__right">
+                <nav class="nav footer__nav">
+                    <ul class="nav__lists">
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">О сервисе</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Тех.поддержка</a>
+                        </li>
+                        <li class="nav__list nav__driver">
+                            <a href="#" class="nav__link">Водители</a>
+                        </li>
+                        <li class="nav__list nav__subscribe">
+                            <a href="#" class="nav__link">Подписка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <a href="#"
+                        ><img src="img/logo-Vela.svg" alt="logo" /> Разработка
+                        и продвижение</a
+                    >
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/app.min.js"></script>
+
+    </body>
+</html>

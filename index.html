@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title> База автомобилистов</title>
+</head>
+
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html">
+                <div class="logo header__logo">
+                    <img src="img/logo.svg" alt="logo" />
+                    <p>база автомобилистов грузовых авто и спец техники</p>
+                </div></a
+            >
+            <nav class="nav header__nav">
+                <ul class="nav__lists">
+                    <li class="nav__list">
+                        <a href="blog.html" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="about.html" class="nav__link">О сервисе</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="support.html" class="nav__link"
+                            >Тех.поддержка</a
+                        >
+                    </li>
+                    <li class="nav__list nav__driver">
+                        <a href="drivers.html" class="nav__link">Водители</a>
+                    </li>
+                    <li class="nav__list nav__subscribe">
+                        <a href="subscribe.html" class="nav__link">Подписка</a>
+                    </li>
+                </ul>
+                <div class="header__inner">
+                    <a href="registration.html" class="header__registry"
+                        >Регистрация</a
+                    >
+                    <button class="header__btn btn">Вход</button>
+                </div>
+                <div class="nav__support">
+                    <div class="nav__support-item">
+                        <div>
+                            <h6 class="nav__support-title">Служба поддержки</h6>
+                            <p class="nav__support-text">
+                                Вы можете обратиться в нашу службу поддержки с
+                                любыми вопросами по работе сервиса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav__support-item">
+                        <div class="nav__support-inner">
+                            <p>Электронная почта</p>
+                            <a href="mailto:info@blacktruck.ru" target="_blank"
+                                >info@blacktruck.ru</a
+                            >
+                        </div>
+                        <div class="nav__support-inner">
+                            <p>Телеграмм</p>
+                            <a href="https://t.me/blacktruck" target="_blank"
+                                >@blacktruck</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="header__btn btn mobile">Вход</button>
+            <div class="burger">
+                <div class="burger__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <section class="main">
+    <div class="container">
+        <div class="main__wrapper">
+            <h2 class="main__title title">
+                Чёрный список водителей грузовых автомобилей и спецтехники
+                России
+            </h2>
+            <p class="main__text">
+                Вы столкнулись с недобросовестным водителем или хотите проверить
+                информацию при найме нового? Тогда зарегистрируйтесь и получите
+                <span>бесплатно полный доступ к сервису.</span>
+            </p>
+            <div class="main__btns">
+                <button class="main__btn btn btn-orange">
+                    Зарегистрироваться
+                </button>
+
+                <a href="#" class="main__btn btn-transparent">Войти</a>
+            </div>
+            <div class="main__footnote">
+                Вы сможете просматривать всю базу водителей и добавлять
+                собственных. Наша цель — предостеречь компании от
+                недобросовестных водителей.
+            </div>
+        </div>
+    </div>
+    <div class="main__img">
+        <picture><source srcset="img/main-bg.webp" type="image/webp"><img src="img/main-bg.png" alt="img" /></picture>
+    </div>
+</section>
+<div class="info">
+    <div class="container">
+        <div class="info__wrapper">
+            <div class="info__item">
+                <div class="info__icon">
+                    <img src="img/data.svg" alt="icon" />
+                </div>
+                <h4 class="info__title">Актуальные данные</h4>
+                <p class="info__text">
+                    Ежедневно пополняемая база недобросовестных водителей
+                </p>
+            </div>
+            <div class="info__item">
+                <div class="info__icon">
+                    <img src="img/information.svg" alt="icon" />
+                </div>
+                <h4 class="info__title">Подробная информация</h4>
+                <p class="info__text">
+                    Полные данные по всем водителям после регистрации
+                </p>
+            </div>
+            <div class="info__item">
+                <div class="info__icon">
+                    <img src="img/add.svg" alt="icon" />
+                </div>
+                <h4 class="info__title">Добавление в базу</h4>
+                <p class="info__text">
+                    Самостоятельно пополните черный список водителей
+                </p>
+            </div>
+            <div class="info__item">
+                <div class="info__icon">
+                    <img src="img/search.svg" alt="icon" />
+                </div>
+                <h4 class="info__title">Удобный поиск</h4>
+                <p class="info__text">
+                    Поиск водителей по важным характеристикам
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <section class="voditel">
+    <div class="container">
+        <div class="voditel__wrapper">
+            <div class="voditel__top">
+                <div class="voditel__inner">
+                    <h2 class="voditel__top-title title">
+                        <span>INFO</span>VODITEL
+                    </h2>
+                    <p class="voditel__text">
+                        INFOVODITEL — единый черный список водителей, в котором
+                        размещены водители грузовых автомобилей и спецтехники.
+                        Сервисом могут пользоваться только работодатели
+                        (юридические лица и индивидуальные предприниматели).
+                        Информация на сервисе не распространяется за его
+                        пределы.
+                    </p>
+                    <p class="voditel__text">
+                        База водителей ежедневно пополняется новыми водителями.
+                        Если Ваш бизнес связан с такси: у Вас свой парк
+                        автомобилей, Вы сдаете легковые автомобили в аренду
+                        (субаренду) либо подключаете к агрегаторам, пользование
+                        актуальным черным списком водителей России для Вас
+                        жизненно необходимо. В черный список попадают
+                        неблагонадежные водители такси России, работающие в
+                        Яндекс. Такси, Gett - такси, Bolt, Таксовичкоф, такси
+                        Везет, Ситимобил, такси 068... а также берущие машины в
+                        аренду для работы в такси, которых компания работодатель
+                        посчитала нужным добавить внести в черный список за
+                        различного рода проступки.
+                    </p>
+                    <p class="voditel__text">
+                        Поиск водителя осуществляется по фамилии, водительскому
+                        удостоверению, паспортным данным, телефону, а также
+                        можно отсортировать водителей по региону.
+                    </p>
+                </div>
+                <div class="voditel__img">
+                    <picture><source srcset="img/drivers.webp" type="image/webp"><img src="img/drivers.jpg" alt="img" /></picture>
+                </div>
+            </div>
+            <div class="voditel__center">
+                <div class="voditel__center-item">
+                    <h4 class="voditel__center-title">>130</h4>
+                    <h4 class="voditel__center-text">
+                        компаний, которые постоянно добавляют в базу нечестных
+                        водителей
+                    </h4>
+                </div>
+                <div class="voditel__center-item">
+                    <h4 class="voditel__center-title">>3600</h4>
+                    <h4 class="voditel__center-text">
+                        нечестных водителей в базе, их количество вырастает в
+                        среднем на 10-15 человек в сутки
+                    </h4>
+                </div>
+                <div class="voditel__center-item">
+                    <h4 class="voditel__center-title">80</h4>
+                    <h4 class="voditel__center-text">городов России</h4>
+                </div>
+            </div>
+            <div class="voditel__bottom">
+                <h2 class="voditel__bottom-title title">
+                    Сервис будет полезен работодателям
+                </h2>
+                <div class="voditel__bottom-items">
+                    <div class="voditel__bottom-item">
+                        <h6 class="voditel__bottom-item-title">
+                            Средство контроля
+                        </h6>
+                        <p>
+                            Ваш работник плохо выполняет свои обязанности,
+                            доставляет неудобства или тратит ваше драгоценное
+                            время? Сообщите ему, что намерены добавить отзыв о
+                            нём в чёрный список работников.
+                        </p>
+                        <img src="img/control.svg" alt="icon" />
+                    </div>
+                    <div class="voditel__bottom-item">
+                        <h6 class="voditel__bottom-item-title">
+                            Чёрный список онлайн
+                        </h6>
+                        <p>
+                            Быстрый доступ с любого устройства. Вы — владелец
+                            бизнеса, HR-специалист, сотрудник кадрового
+                            агентства или службы безопасности? Проверяйте
+                            кандидатов перед приёмом на работу и отсеивайте
+                            недобросовестных.
+                        </p>
+                        <img src="img/wifi.svg" alt="icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="list">
+    <div class="container">
+        <div class="list__wrapper">
+            <h2 class="list__title title">Список водителей</h2>
+            <div class="list__items">
+                <div class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-1.webp" type="image/webp"><img src="img/list-1.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <a href="tel:+79099990000"
+                                            >8 (909) 999-00-00</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="attention list__attention">в розыске</div>
+                        <div class="new list__new">новый</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </div>
+                <div class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-2.webp" type="image/webp"><img src="img/list-2.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <a href="tel:+79099990000"
+                                            >8 (909) 999-00-00</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="new list__new">новый</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </div>
+                <div class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-3.webp" type="image/webp"><img src="img/list-3.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <a href="tel:+79099990000"
+                                            >8 (909) 999-00-00</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="new list__new">новый</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </div>
+                <div class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-4.webp" type="image/webp"><img src="img/list-4.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <a href="tel:+79099990000"
+                                            >8 (909) 999-00-00</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left"></div>
+                    <div class="list__comment">0</div>
+                </div>
+                <div class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-5.webp" type="image/webp"><img src="img/list-5.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <a href="tel:+79099990000"
+                                            >8 (909) 999-00-00</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left">
+                        <div class="attention list__attention">в розыске</div>
+                    </div>
+                    <div class="list__comment">0</div>
+                </div>
+                <div class="list__item">
+                    <div class="list__wrap">
+                        <picture><source srcset="img/list-6.webp" type="image/webp"><img src="img/list-6.jpg" alt="avatar" /></picture>
+                        <div class="list__inner">
+                            <p class="list__add">
+                                Добавлен: 10.03.2022, ИП Фролов
+                            </p>
+                            <h4 class="list__item-title">
+                                Власенко Артем Максимович
+                            </h4>
+
+                            <div class="list__info">
+                                <div class="list__info-item">
+                                    <p class="list__item-date">
+                                        <span class="bold">
+                                            Дата рождения: </span
+                                        >23.09.1984
+                                    </p>
+                                    <p class="list__item-date">
+                                        <span class="bold"> Телефон:</span>
+                                        <a href="tel:+79099990000"
+                                            >8 (909) 999-00-00</a
+                                        >
+                                    </p>
+                                </div>
+                                <div class="list__info-item">
+                                    <p class="list__doc">
+                                        <span class="bold"> Документ: </span
+                                        >9090 203456
+                                    </p>
+                                    <p class="list__city">
+                                        <span class="bold"> Город: </span
+                                        >Краснодар
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list__left"></div>
+                    <div class="list__comment">0</div>
+                </div>
+            </div>
+            <button class="list__btn btn" data-path="form-popup">
+                Показать еще
+            </button>
+        </div>
+    </div>
+</section>
+
+<div class="modals modals-list">
+    <div class="modal-overlay">
+        <div class="modal" data-target="form-popup">
+            <div class="close"></div>
+            <h3 class="modal__title">Доступ к базе</h3>
+            <p class="modal__text">
+                Чтобы воспользоваться бесплатной базой недобросовестных
+                водителей грузовых авто и спецтехники, вам необходимо войти или
+                зарегистрироваться на сайте. Данные меры приняты для
+                безопасности вас и других компаний.
+            </p>
+            <div class="modal__btns">
+                <button class="modal__btn btn btn-orange">
+                    Зарегистрироваться
+                </button>
+                <button class="modal__btn btn">Войти</button>
+            </div>
+            <div class="modal__access">
+                Доступ может быть предоставлен только работодателям (юридическим
+                лицам и индивидуальным предпринимателям).
+            </div>
+        </div>
+    </div>
+</div>
+
+                <section class="write">
+    <div class="container">
+        <div class="write__wrapper">
+            <h2 class="write__title title">Напишите нам</h2>
+            <p class="write__text text">
+                Если у вас возникли вопросы или не получается
+                зарегистрироваться, авторизоваться, добавить водителя.
+            </p>
+            <div class="write__links">
+                <a href="mailto:info@blacktruck.ru" class="write__link">
+                    <span>Электронная почта</span>info@blacktruck.ru
+                </a>
+                <a
+                    href="https://t.me/blacktruck"
+                    target="_blank"
+                    class="write__link"
+                >
+                    <span>Телеграмм</span>@blacktruck
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="index.html">
+                    <div class="logo footer__logo">
+                        <img src="img/logo-white.svg" alt="logo" />
+                        <p>база автомобилистов грузовых авто и спец техники</p>
+                    </div></a
+                >
+                <p class="footer__info-logo">
+                    © 2022 INFOVODITEL, Чёрный список водителей
+                </p>
+            </div>
+            <div class="footer__right">
+                <nav class="nav footer__nav">
+                    <ul class="nav__lists">
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">О сервисе</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Тех.поддержка</a>
+                        </li>
+                        <li class="nav__list nav__driver">
+                            <a href="#" class="nav__link">Водители</a>
+                        </li>
+                        <li class="nav__list nav__subscribe">
+                            <a href="#" class="nav__link">Подписка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <a href="#"
+                        ><img src="img/logo-Vela.svg" alt="logo" /> Разработка
+                        и продвижение</a
+                    >
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/app.min.js"></script>
+
+    </body>
+</html>

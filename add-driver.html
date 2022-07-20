@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Добавить водителя в базу</title>
+</head>
+
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="index.html">
+                <div class="logo header__logo">
+                    <img src="img/logo.svg" alt="logo" />
+                    <p>база автомобилистов грузовых авто и спец техники</p>
+                </div></a
+            >
+            <nav class="nav header__nav">
+                <ul class="nav__lists">
+                    <li class="nav__list">
+                        <a href="blog.html" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="about.html" class="nav__link">О сервисе</a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="support.html" class="nav__link"
+                            >Тех.поддержка</a
+                        >
+                    </li>
+                    <li class="nav__list nav__driver">
+                        <a href="drivers.html" class="nav__link">Водители</a>
+                    </li>
+                    <li class="nav__list nav__subscribe">
+                        <a href="subscribe.html" class="nav__link">Подписка</a>
+                    </li>
+                </ul>
+                <div class="header__inner">
+                    <a href="registration.html" class="header__registry"
+                        >Регистрация</a
+                    >
+                    <button class="header__btn btn">Вход</button>
+                </div>
+                <div class="nav__support">
+                    <div class="nav__support-item">
+                        <div>
+                            <h6 class="nav__support-title">Служба поддержки</h6>
+                            <p class="nav__support-text">
+                                Вы можете обратиться в нашу службу поддержки с
+                                любыми вопросами по работе сервиса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav__support-item">
+                        <div class="nav__support-inner">
+                            <p>Электронная почта</p>
+                            <a href="mailto:info@blacktruck.ru" target="_blank"
+                                >info@blacktruck.ru</a
+                            >
+                        </div>
+                        <div class="nav__support-inner">
+                            <p>Телеграмм</p>
+                            <a href="https://t.me/blacktruck" target="_blank"
+                                >@blacktruck</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="header__btn btn mobile">Вход</button>
+            <div class="burger">
+                <div class="burger__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <section class="add-driver">
+    <div class="container">
+        <div class="crumbs">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="drivers.html">Водители</a>
+                </li>
+
+                <li>
+                    <p>Добавить водителя в базу</p>
+                </li>
+            </ul>
+        </div>
+        <div class="add-driver__wrapper">
+            <h2 class="add-driver__title title">Добавить водителя в базу</h2>
+            <div class="add-driver__banner banner">
+                <div class="banner__icon">
+                    <img src="img/info.svg" alt="" />
+                </div>
+                <p class="banner__text">
+                    Все данные о водителе сразу же опубликуются на сервисе,
+                    однако модератор также проверит всю информацию
+                    и при возникновении вопросов свяжется с вами.
+                </p>
+                <p class="banner__text">
+                    Рекомендуем заполнять поля максимально подробно, так наша
+                    база будет ещё более полезной, и о водителе узнают как можно
+                    больше людей. Спасибо, что помогаете другим организациям!
+                </p>
+            </div>
+            <form id="regForm">
+                <div class="dots">
+                    <div class="step-dot step-dot1">
+                        <div class="dot-title">1 шаг</div>
+                        <div class="dot-text">данные водителя</div>
+                    </div>
+                    <div class="step-dot step-dot2">
+                        <div class="dot-title">2 шаг</div>
+                        <div class="dot-text">документы</div>
+                    </div>
+                    <div class="step-dot step-dot3">
+                        <div class="dot-title">3 шаг</div>
+                        <div class="dot-text">нарушение</div>
+                    </div>
+                </div>
+                <div class="step step1">
+                    <div class="form__title">Данные об организации</div>
+                    <label
+                        ><p>Фамилия<span>*</span></p>
+                        <input
+                            type="text"
+                            class="form__item form__input"
+                            name="first-name"
+                            value=""
+                            required
+                        />
+                        <div class="error__input">Введите Фамилия</div>
+                    </label>
+                    <label
+                        ><p>Имя<span>*</span></p>
+                        <input
+                            type="text"
+                            class="form__item form__input"
+                            name="last-name"
+                            value=""
+                            required
+                        />
+                        <div class="error__input">Введите Имя</div>
+                    </label>
+                    <label
+                        ><p>Отчество</p>
+                        <input
+                            type="text"
+                            class="form__item form__input"
+                            name="so-name"
+                            value=""
+                        />
+                    </label>
+                    <label
+                        ><p>Город<span>*</span></p>
+                        <input
+                            type="text"
+                            class="form__item form__input"
+                            name="city"
+                            value=""
+                            required
+                        />
+                        <div class="error__input">Введите Город</div></label
+                    >
+
+                    <label
+                        ><p>Дата рождения<span>*</span></p>
+                        <input
+                            type="text"
+                            class="form__item form__input form__input-date"
+                            name="date"
+                            value=""
+                            required
+                            placeholder="__.__.____"
+                            onfocus="(this.type='date')"
+                        />
+                        <div class="error__input">
+                            Введите Дата рождения
+                        </div></label
+                    >
+
+                    <div class="inner">
+                        <label class="add-phone"
+                            ><p>Телефон<span>*</span></p>
+                            <div class="input-inner">
+                                <input
+                                    type="number"
+                                    class="form__item form__input"
+                                    name="phone"
+                                    placeholder="8 (___) ___-__-__"
+                                    value=""
+                                    required
+                                />
+                                <div class="error__input">Введите Телефон</div>
+                            </div>
+                        </label>
+                        <div class="add-phone-item">+ Добавить телефон</div>
+                    </div>
+                    <div class="driver__choice">
+                        <div class="driver__choice-inner">
+                            <div class="driver__choice-title">
+                                Фотография водителя
+                            </div>
+                            <p>Фото будет отображаться на аватаре</p>
+                        </div>
+
+                        <label class="driver__choice-label">
+                            <input type="file" name="file" />
+                            <div class="driver__choice-btn">Выберите файлы</div>
+                        </label>
+                        <p>
+                            Выберите файлы с расширением (png, jpeg, jpg) и
+                            размером, не превышающим 15 Мб
+                        </p>
+                    </div>
+                </div>
+                <div class="step step2">
+                    <div class="form__title">Документы водителя</div>
+                    <div class="step__inner">
+                        <label
+                            ><p>Паспорт серия</p>
+                            <input
+                                type="text"
+                                class="form__item form__input"
+                                name="passport-serial"
+                                value=""
+                                required
+                                placeholder="____"
+                            />
+                        </label>
+                        <label
+                            ><p>Паспорт номер</p>
+                            <input
+                                type="text"
+                                class="form__item form__input"
+                                name="passport-number"
+                                value=""
+                                required
+                                placeholder="______"
+                            />
+                        </label>
+                    </div>
+                    <div class="step__inner">
+                        <label
+                            ><p>Вод. удостоверение серия<span>*</span></p>
+                            <input
+                                type="text"
+                                class="form__item form__input"
+                                name="doc-serial"
+                                value=""
+                                required
+                                placeholder="____"
+                            />
+                            <div class="error__input">
+                                Введите Вод. удостоверение серия
+                            </div>
+                        </label>
+                        <label
+                            ><p>Вод. удостоверение номер<span>*</span></p>
+                            <input
+                                type="text"
+                                class="form__item form__input"
+                                name="doc-number"
+                                value=""
+                                required
+                                placeholder="______"
+                            />
+                            <div class="error__input">
+                                Введите Вод. удостоверение номер
+                            </div>
+                        </label>
+                    </div>
+                    <label
+                        ><p>Прописка</p>
+                        <textarea
+                            placeholder="Страна, населенный пункт, улица, дом, квартира
+
+                    "
+                        ></textarea>
+                    </label>
+                    <div class="driver__choice">
+                        <div class="driver__choice-inner">
+                            <div class="driver__choice-title">
+                                Фотография водителя
+                            </div>
+                            <p>
+                                Фотографии испорченного авто, договоров и прочих
+                                документов лучше добавить на 3 шаге
+                            </p>
+                        </div>
+
+                        <label class="driver__choice-label">
+                            <input type="file" name="file" />
+                            <div class="driver__choice-btn">Выберите файлы</div>
+                        </label>
+                        <p>
+                            Фотографии водителя, водительское удостоверение или
+                            паспорт.
+                        </p>
+                        <p>
+                            Выберите файлы с расширением (png, jpeg, jpg) и
+                            размером, не превышающим 15 Мб
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step step3">
+                    <div class="form__title">Причины для добавления в базу</div>
+                    <label
+                        ><p>Нарушение<span>*</span></p>
+                        <textarea
+                            placeholder="Примеры: Прибыл на место назначения спустя неделю назначенных сроков; слетел с трассы в состоянии алкогольного опьянения; разбил или сжег грузовик, чтобы скрыть улики; сообщил об угоне.
+
+                "
+                            required
+                        ></textarea>
+                        <div class="error__input">Введите Нарушение</div>
+                    </label>
+                    <div class="driver__choice">
+                        <div class="driver__choice-inner">
+                            <div class="driver__choice-title">
+                                Фотографии нарушения
+                            </div>
+                        </div>
+
+                        <label class="driver__choice-label">
+                            <input type="file" name="file" />
+                            <div class="driver__choice-btn">Выберите файлы</div>
+                        </label>
+
+                        <p>
+                            Выберите файлы с расширением (png, jpeg, jpg) и
+                            размером, не превышающим 15 Мб
+                        </p>
+                    </div>
+                    <div class="driver__choice driver__choice-video">
+                        <div class="driver__choice-inner">
+                            <div class="driver__choice-title">Видео</div>
+                        </div>
+
+                        <label class="driver__choice-label">
+                            <input type="file" name="file" />
+                            <div class="driver__choice-btn">Выберите файлы</div>
+                        </label>
+
+                        <p>
+                            Разрешается загрузить до 2 видео и общим размером,
+                            не превышающим 30 Мб
+                        </p>
+                    </div>
+                    <div class="driver__form-search">
+                        <div class="driver__form-search-title">
+                            Водитель находится в розыске?
+                        </div>
+                        <div class="driver__form-search-text">
+                            Отметьте, если в настоящее время водитель находится
+                            в розыске в связи с недавними преступлениями. Такой
+                            водитель будет отображаться на главной странице
+                            дольше других. Другие организации, располагающие
+                            информацией об этом водителе, смогут поделиться этой
+                            информацией.
+                        </div>
+                        <label
+                            ><div class="search-label">
+                                <input type="radio" />
+                                <p>Да, в розыске</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form__btns">
+                    <button
+                        type="button"
+                        id="nextBtn"
+                        class="nextBtn form__btn btn btn-orange"
+                    >
+                        Далее
+                    </button>
+                    <button
+                        type="button"
+                        id="prevBtn"
+                        class="prevBtn btn form__btn"
+                    >
+                        Назад
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+                <section class="write">
+    <div class="container">
+        <div class="write__wrapper">
+            <h2 class="write__title title">Напишите нам</h2>
+            <p class="write__text text">
+                Если у вас возникли вопросы или не получается
+                зарегистрироваться, авторизоваться, добавить водителя.
+            </p>
+            <div class="write__links">
+                <a href="mailto:info@blacktruck.ru" class="write__link">
+                    <span>Электронная почта</span>info@blacktruck.ru
+                </a>
+                <a
+                    href="https://t.me/blacktruck"
+                    target="_blank"
+                    class="write__link"
+                >
+                    <span>Телеграмм</span>@blacktruck
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="index.html">
+                    <div class="logo footer__logo">
+                        <img src="img/logo-white.svg" alt="logo" />
+                        <p>база автомобилистов грузовых авто и спец техники</p>
+                    </div></a
+                >
+                <p class="footer__info-logo">
+                    © 2022 INFOVODITEL, Чёрный список водителей
+                </p>
+            </div>
+            <div class="footer__right">
+                <nav class="nav footer__nav">
+                    <ul class="nav__lists">
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">О сервисе</a>
+                        </li>
+                        <li class="nav__list">
+                            <a href="#" class="nav__link">Тех.поддержка</a>
+                        </li>
+                        <li class="nav__list nav__driver">
+                            <a href="#" class="nav__link">Водители</a>
+                        </li>
+                        <li class="nav__list nav__subscribe">
+                            <a href="#" class="nav__link">Подписка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <a href="#"
+                        ><img src="img/logo-Vela.svg" alt="logo" /> Разработка
+                        и продвижение</a
+                    >
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/app.min.js"></script>
+
+    </body>
+</html>
